@@ -1,6 +1,7 @@
 import os
 
 class FileManager:
+    
     def create_file(self, filename):
         try:
             with open(filename, 'x') as f:
@@ -95,6 +96,5 @@ class FileManagerApp:
                 print("Invalid input. Please choose a valid option.")
 
 
-if __name__ == "__main__":
-    app = FileManagerApp()
-    app.run()
+app = FileManagerApp()
+app.run()
